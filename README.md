@@ -23,7 +23,7 @@ Supports Fargate through the use of `launch-type` and `network-configuration`
 
 ```yaml
     - name: Run Task on Amazon ECS
-      uses: uturndata/amazon-ecs-run-task@v1
+      uses: credis-uk/amazon-ecs-run-task@main
       with:
         task-definition: task-definition.json
         cluster: my-cluster
@@ -96,7 +96,7 @@ The task definition file can be updated prior to deployment with the new contain
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Run Task on Amazon ECS
-      uses: uturndata/amazon-ecs-run-task@v1
+      uses: credis-uk/amazon-ecs-run-task@main
       with:
         task-definition: task-definition.json
         cluster: my-cluster
