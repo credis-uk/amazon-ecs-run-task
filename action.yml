@@ -1,5 +1,5 @@
 name: 'Amazon ECS "Run Task" Action'
-author: "Uturn Data Solutions"
+author: "ONE.io"
 description: "Runs a standalone Amazon ECS task (EC2 or Fargate)"
 branding:
   icon: "cloud"
@@ -35,5 +35,5 @@ outputs:
   task-arn:
     description: "The ARN of the ECS task"
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/index.js"
